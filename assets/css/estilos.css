@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuente */
+
+.pixelify-sans {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+
+
+/* Barra Navegacion */
+.BarraNav {
+    background-color: #4b1d75;
+    display: flex;
+    justify-content: flex;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+.BarraNav .nav-links{
+    list-style: none;
+}
+
+.BarraNav .nav-links li{
+    display: inline-flex;
+    padding: 0 20px;    
+}
+
+.BarraNav .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.BarraNav .nav-links a{
+    font-size: 700;
+    color: #eceff1;
+    text-decoration: none;    
+}
+
+.BarraNav .nav-links li a:hover{
+    color: #64dfe4;
+}
+
+.BarraNav .btn button{
+    margin-left: 20px;
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.BarraNav .btn button:hover{
+    background-color: #e2f1f8;
+    color: #ad0101;
+    transform: scale(1.1);
+}
+
+/* Cuerpo Pagina <Acordion> */
+
+
+.Cuerpo_acordeon{
+    box-sizing: content-box;
+    border-radius: 10px;
+}
+
+body{
+    background-color: #1b3039;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+.PestañaDesplegable{
+    justify-content: center;
+    background-size: auto;
+    background-color: none;
+    align-items: center;
+    text-align: center;
+}
+
+.btnPerfil{
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: #64dfe4;
+    box-sizing: content-box;
+    border-radius: 10px;
+}
+
+.card{
+    background-position-x: 50% ;
+    width: 50vh;
+    background-color: #96e7f1;
+    box-sizing: content-box;
+    box-shadow: 0, 0, 0, 0.7, rgba(0,0,0,0);
+}
+.container {
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bubbles {
+    position: relative;
+    display: flex;
+}
+
+.bubbles span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #ad0101;
+    margin: 0 4px;
+    border-radius: 10%;
+    box-shadow:  0 0 0 10px #391b1b,
+    0 0 50px #ff4242,
+    0 0 100px #ff4242;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i)) ;
+}
+
+.bubbles span:nth-child(even) {
+    background: #59cdeb;
+    box-shadow:  0 0 0 10px #1b3039,
+    0 0 50px #96e7f1,
+    0 0 100px #96e7f1;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(100vh) scale(0);
+    }
+    100% {
+        transform: translateY(-10vh) scale(1);
+    }
+}
